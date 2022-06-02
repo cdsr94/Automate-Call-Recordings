@@ -2,7 +2,11 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-This repository is used for automation in the deletion of recorded calls in the Twilio application.
+This script automates the process of deleting calls recorded in Twilio in a time range.
+
+Since we still do not have the scope on the Calabrio side, once they provide us with information, the recordings can be validated on both platforms and proceed to eliminate those that are already in Calabrio.
+
+A grace period is proposed with an environment variable called "MAX_DAYS_TO_REMAIN", which takes as reference the day of execution of the script minus the days of the variable; so we will get all the recordings that started before that day backward in a range of 7 days.
 
 ## Features
 
